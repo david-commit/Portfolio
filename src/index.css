@@ -6,9 +6,11 @@
   padding: 0;
   font-family: 'Open Sans', sans-serif;
 }
+/* -- START OF NAVBAR -- */
 header {
   width: 85%;
   margin: 0 auto;
+  background-color: white;
 }
 #logo {
   font-family: 'Satisfy', sans-serif;
@@ -69,6 +71,9 @@ header {
   border: thin dashed;
   align-items: center;
 }
+.intro-title p {
+  margin: auto 0;
+}
 .intro-title hr {
   width: 60px;
   display: table-cell;
@@ -86,3 +91,36 @@ header {
   width: 65%;
   margin: auto;
 }
+/* -- END OF NAVBAR -- */
+/* -- START OF ABOUT -- */
+.about-main-container {
+  width: 85%;
+  margin: 100px auto;
+  border: thin red dashed;
+}
+  .about-main-container > h1,
+  .about-main-container > p {
+    text-align: center;
+  }
+  .about-container {
+    border: thin purple dashed;
+    display: flex;
+    justify-content: space-between;
+    height: 25rem;
+  }
+  .about-img {
+    border: thin dashed orangered;
+    width: 45%;
+    display: flex;
+  }
+  .about-img img{
+    width: 45%;
+    margin: auto;
+  }
+  .about-txt {
+    border: thin dashed blue;
+    width: 50%;
+    border: thin dashed orangered;
+    margin: auto ;
+  }
+/* -- END OF ABOUT -- */
