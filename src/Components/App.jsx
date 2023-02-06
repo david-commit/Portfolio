@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import NavBar from './NavBar'
 import Intro from './Intro';
+import About from './About';
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
     >
       <NavBar />
       <Intro />
+      <About />
     </div>
   );
 }
