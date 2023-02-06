@@ -20,14 +20,26 @@ const Intro = () => {
       </section>
       <div className='intro-container'>
         <div className='intro-txt'>
-         <section>
-
-          <h1>David Ondiege</h1>
-          <div className='intro-title'><hr />&nbsp; &nbsp;<p>Full Stack web Developer</p></div>
-         </section>
+          <section>
+            <h5>Welcome to my Portfolio👋</h5>
+            <h1>Hi, I'm David Ondiege</h1>
+            <div className='intro-title'>
+              <hr />
+              &nbsp; &nbsp;<p>Full Stack web Developer</p>
+            </div>
+            <p>
+              I'm a Fullstack web developer based in Nairobi - Kenya and i'm
+              very passionate and dedicated to my work.
+            </p>
+            <a href='#contact'>
+              <button class='btn btn-dark'>
+                Let's Connect <i class='fa-solid fa-circle-arrow-right'></i>
+              </button>
+            </a>
+          </section>
         </div>
         <div className='intro-img'>
-         <img src={potrait} alt="David Ondiege" />
+          <img src={potrait} alt='David Ondiege' />
         </div>
       </div>
     </div>

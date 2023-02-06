@@ -56,12 +56,13 @@ header {
 }
 .intro-txt {
   border: thin dashed;
-  width: 45%;
+  width: 50%;
   display: flex;
 }
 .intro-txt section {
   border: thin dashed;
   margin: auto;
+  width: 80%;
 }
 .intro-title {
   display: flex;
@@ -70,15 +71,15 @@ header {
 }
 .intro-title hr {
   width: 60px;
-  /* display: table-cell;
+  display: table-cell;
   vertical-align: middle;
   height: 2px;
   margin: auto 0;
-  line-height: 50%; */
+  line-height: 50%;
 }
 .intro-img {
   border: thin dashed;
-  width: 45%;
+  width: 40%;
   display: flex;
 }
 .intro-img img {
