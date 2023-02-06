@@ -7,6 +7,8 @@
   font-family: 'Open Sans', sans-serif;
 }
 
-body {
+#logo {
   font-family: 'Satisfy', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
 }
