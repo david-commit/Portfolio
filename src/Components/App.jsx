@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import NavBar from './NavBar'
+import Intro from './Intro';
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       tabindex='0'
     >
       <NavBar />
+      <Intro />
     </div>
   );
 }
