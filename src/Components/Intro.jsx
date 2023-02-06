@@ -20,7 +20,11 @@ const Intro = () => {
       </section>
       <div className='intro-container'>
         <div className='intro-txt'>
+         <section>
+
           <h1>David Ondiege</h1>
+          <div className='intro-title'><hr />&nbsp; &nbsp;<p>Full Stack web Developer</p></div>
+         </section>
         </div>
         <div className='intro-img'>
          <img src={potrait} alt="David Ondiege" />
