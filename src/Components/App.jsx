@@ -1,13 +1,14 @@
 import NavBar from './NavBar';
 import Intro from './Intro';
 import About from './About';
-import Contact from './Contact';
+import Skills from './Skills'
 import Projects from './Projects';
+import Contact from './Contact';
 import Footer from './Footer';
 
 function App() {
   return (
-    <div
+    <main
       className='App'
       data-bs-spy='scroll'
       data-bs-target='#toggleMobileMenu'
@@ -17,10 +18,11 @@ function App() {
       <NavBar />
       <Intro />
       <About />
-      <Contact />
+      <Skills />
       <Projects />
+      <Contact />
       <Footer />
-    </div>
+    </main>
   );
 }
 
