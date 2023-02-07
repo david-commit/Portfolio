@@ -17,16 +17,20 @@ header {
   font-size: 30px;
   font-weight: 600;
 }
+.nav-link {
+  transition: .15s ease-in-out;
+}
+/* -- END OF NAVBAR -- */
+/* -- START OF HERO -- */
 .intro-main-container {
   width: 85%;
-  height: 35rem;
+  height: 30rem;
+  padding-top: 5rem;
   margin: 0 auto;
-  border: thin dashed red;
   display: flex;
   justify-content: space-between;
 }
 .intro-socials {
-  border: thin dashed purple;
   width: 5%;
   height: inherit;
   display: flex;
@@ -57,33 +61,31 @@ header {
   justify-content: space-around;
 }
 .intro-txt {
-  border: thin dashed;
   width: 50%;
   display: flex;
 }
 .intro-txt section {
-  border: thin dashed;
   margin: auto;
   width: 80%;
 }
 .intro-title {
   display: flex;
-  border: thin dashed;
   align-items: center;
+  padding: 4px 0;
 }
 .intro-title p {
   margin: auto 0;
 }
 .intro-title hr {
-  width: 60px;
+  width: 45px;
   display: table-cell;
   vertical-align: middle;
   height: 2px;
   margin: auto 0;
   line-height: 50%;
+  border: 5px blabk solid;
 }
 .intro-img {
-  border: thin dashed;
   width: 40%;
   display: flex;
 }
@@ -91,36 +93,108 @@ header {
   width: 65%;
   margin: auto;
 }
-/* -- END OF NAVBAR -- */
+/* -- END OF HERO -- */
 /* -- START OF ABOUT -- */
 .about-main-container {
   width: 85%;
+  margin: 0 auto 100px auto;
+  padding-top: 100px;
+  /* border: thin red dashed; */
+}
+.about-main-container > h1,
+.about-main-container > p {
+  text-align: center;
+}
+.about-container {
+  border: thin purple dashed;
+  display: flex;
+  justify-content: space-between;
+  height: 25rem;
+}
+.about-img {
+  border: thin dashed orangered;
+  width: 45%;
+  display: flex;
+}
+.about-img img {
+  width: 45%;
+  margin: auto;
+}
+.about-txt {
+  border: thin dashed blue;
+  width: 50%;
+  border: thin dashed orangered;
+  margin: auto;
+}
+/* -- END OF ABOUT -- */
+/* -- START OF SKILLS -- */
+.skills-main-container {
+  width: 85%;
+  margin: auto;
+  border: thin dashed;
+}
+.skills-main-container {
+  text-align: center;
+}
+/* -- START OF SKILLS -- */
+/* -- START OF PROJECTS -- */
+.projects-main-container {
+  width: 85%;
   margin: 100px auto;
+  border: 1px solid red;
+}
+.projects-main-container h1,
+.projects-main-container p {
+  text-align: center;
+}
+.projects-container {
   border: thin red dashed;
 }
-  .about-main-container > h1,
-  .about-main-container > p {
-    text-align: center;
-  }
-  .about-container {
-    border: thin purple dashed;
-    display: flex;
-    justify-content: space-between;
-    height: 25rem;
-  }
-  .about-img {
-    border: thin dashed orangered;
-    width: 45%;
-    display: flex;
-  }
-  .about-img img{
-    width: 45%;
-    margin: auto;
-  }
-  .about-txt {
-    border: thin dashed blue;
-    width: 50%;
-    border: thin dashed orangered;
-    margin: auto ;
-  }
-/* -- END OF ABOUT -- */
+/* -- END OF PROJECTS -- */
+/* -- START OF CONTACT -- */
+.contact-main-container {
+  width: 85%;
+  margin: auto;
+  border: thin dashed red;
+}
+.contact-main-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.contact-container {
+  border: thin dashed red;
+  display: flex;
+  justify-content: space-between;
+}
+.contact-text {
+  border: thin dashed blue;
+  width: 40%;
+}
+.contact-text > div > a {
+  text-decoration: none;
+  color: rgb(13, 25, 48);
+  padding: 2px;
+}
+.contact-text > div > a > i {
+  color: rgb(13, 25, 48);
+  font-size: 1.2rem;
+  margin-right: 4px;
+}
+.contact-text > div > a:hover {
+  color: black;
+}
+.contact-form {
+  border: thin dashed blue;
+  width: 55%;
+}
+/* -- END OF CONTACT -- */
+/* -- START OF FOOTER -- */
+.footer-main-container {
+  background-color: black;
+}
+.footer-container {
+  width: 85%;
+  margin: auto;
+  color: white;
+}
+/* -- END OF FOOTER -- */

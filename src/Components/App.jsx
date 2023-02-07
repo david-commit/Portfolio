@@ -1,12 +1,14 @@
-import { useState } from 'react'
-import NavBar from './NavBar'
+import NavBar from './NavBar';
 import Intro from './Intro';
 import About from './About';
+import Skills from './Skills'
+import Projects from './Projects';
+import Contact from './Contact';
+import Footer from './Footer';
 
 function App() {
-
   return (
-    <div
+    <main
       className='App'
       data-bs-spy='scroll'
       data-bs-target='#toggleMobileMenu'
@@ -16,8 +18,12 @@ function App() {
       <NavBar />
       <Intro />
       <About />
-    </div>
+      <Skills />
+      <Projects />
+      <Contact />
+      <Footer />
+    </main>
   );
 }
 
-export default App
+export default App;

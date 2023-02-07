@@ -2,8 +2,8 @@ import React from 'react';
 
 const NavBar = () => {
   return (
-    <header class='sticky-top'>
-      <nav class='navbar navbar-expand-lg navbar-light' id='header'>
+    <header class='sticky-top bg-black' style={{width: '100%'}}>
+      <nav class='navbar navbar-expand-lg navbar-dark' id='header'>
         <div class='container'>
           <a class='navbar-brand' href='' id='logo'>
             {'<DavidOndiege/>'}
@@ -38,7 +38,7 @@ const NavBar = () => {
                 </a>
               </li>
               <li class='nav-item'>
-                <a href='#portfolio' class='nav-link'>
+                <a href='#projects' class='nav-link'>
                   Projects
                 </a>
               </li>
@@ -56,3 +56,4 @@ const NavBar = () => {
 };
 
 export default NavBar;
+  
