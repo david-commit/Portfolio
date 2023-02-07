@@ -17,6 +17,8 @@ header {
   font-size: 30px;
   font-weight: 600;
 }
+/* -- END OF NAVBAR -- */
+/* -- START OF HERO -- */
 .intro-main-container {
   width: 85%;
   height: 35rem;
@@ -91,36 +93,36 @@ header {
   width: 65%;
   margin: auto;
 }
-/* -- END OF NAVBAR -- */
+/* -- END OF HERO -- */
 /* -- START OF ABOUT -- */
 .about-main-container {
   width: 85%;
   margin: 100px auto;
   border: thin red dashed;
 }
-  .about-main-container > h1,
-  .about-main-container > p {
-    text-align: center;
-  }
-  .about-container {
-    border: thin purple dashed;
-    display: flex;
-    justify-content: space-between;
-    height: 25rem;
-  }
-  .about-img {
-    border: thin dashed orangered;
-    width: 45%;
-    display: flex;
-  }
-  .about-img img{
-    width: 45%;
-    margin: auto;
-  }
-  .about-txt {
-    border: thin dashed blue;
-    width: 50%;
-    border: thin dashed orangered;
-    margin: auto ;
-  }
+.about-main-container > h1,
+.about-main-container > p {
+  text-align: center;
+}
+.about-container {
+  border: thin purple dashed;
+  display: flex;
+  justify-content: space-between;
+  height: 25rem;
+}
+.about-img {
+  border: thin dashed orangered;
+  width: 45%;
+  display: flex;
+}
+.about-img img {
+  width: 45%;
+  margin: auto;
+}
+.about-txt {
+  border: thin dashed blue;
+  width: 50%;
+  border: thin dashed orangered;
+  margin: auto;
+}
 /* -- END OF ABOUT -- */

@@ -3,7 +3,7 @@ import potrait from '../img/david-ondiege.jpg'
 
 const Intro = () => {
   return (
-    <div className='intro-main-container'>
+    <div className='intro-main-container' id='hero'>
       <section className='intro-socials'>
         <a href='https://twitter.com/incognito_098' target='_blank'>
           <i class='fa-brands fa-twitter'></i>
