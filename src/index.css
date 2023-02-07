@@ -128,13 +128,48 @@ header {
 /* -- END OF ABOUT -- */
 /* -- START OF CONTACT -- */
 .contact-main-container {
-  width:  85%;
+  width: 85%;
   margin: auto;
   border: thin dashed red;
 }
+.contact-main-container h1 {
+  text-align: center;
+}
 .contact-container {
-border: thin dashed red;
+  border: thin dashed red;
+  display: flex;
+  justify-content: space-between;
 }
 .contact-text {
-   border: thin dashed blue;
+  border: thin dashed blue;
+  width: 40%;
 }
+.contact-form {
+border: thin dashed blue;
+  width: 55%;
+}
+/* -- END OF CONTACT -- */
+/* -- START OF PROJECTS -- */
+.projects-main-container {
+  width: 85%;
+  margin: 100px auto;
+  border: 1px solid red;
+}
+.projects-main-container h1,
+.projects-main-container p {
+  text-align: center;
+}
+.projects-container {
+  border: thin red dashed;
+}
+/* -- END OF PROJECTS -- */
+/* -- START OF FOOTER -- */
+.footer-main-container {
+  background-color: black;
+}
+.footer-container {
+  width: 85%;
+  margin: auto;
+  color: white;
+}
+/* -- END OF FOOTER -- */
