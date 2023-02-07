@@ -1,10 +1,11 @@
-import { useState } from 'react'
-import NavBar from './NavBar'
+import NavBar from './NavBar';
 import Intro from './Intro';
 import About from './About';
+import Contact from './Contact';
+import Projects from './Projects';
+import Footer from './Footer';
 
 function App() {
-
   return (
     <div
       className='App'
@@ -16,8 +17,11 @@ function App() {
       <NavBar />
       <Intro />
       <About />
+      <Contact />
+      <Projects />
+      <Footer />
     </div>
   );
 }
 
-export default App
+export default App;

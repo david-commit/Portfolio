@@ -126,3 +126,15 @@ header {
   margin: auto;
 }
 /* -- END OF ABOUT -- */
+/* -- START OF CONTACT -- */
+.contact-main-container {
+  width:  85%;
+  margin: auto;
+  border: thin dashed red;
+}
+.contact-container {
+border: thin dashed red;
+}
+.contact-text {
+   border: thin dashed blue;
+}
