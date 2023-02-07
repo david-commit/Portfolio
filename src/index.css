@@ -209,20 +209,17 @@ header {
 /* -- START OF CONTACT -- */
 .contact-main-container {
   width: 85%;
-  margin: auto;
-  border: thin dashed red;
+  margin: 0 auto 100px;
 }
 .contact-main-container h1 {
   text-align: center;
   margin-bottom: 20px;
 }
 .contact-container {
-  border: thin dashed red;
   display: flex;
   justify-content: space-between;
 }
 .contact-text {
-  border: thin dashed blue;
   width: 40%;
 }
 .contact-text > div > a {
@@ -239,13 +236,51 @@ header {
   color: black;
 }
 .contact-form {
-  border: thin dashed blue;
   width: 55%;
+  display: flex;
+  flex-direction: column;
+}
+.contact-form > div {
+  display: flex;
+  justify-content: space-between;
+}
+.contact-form > div > input {
+  width: 47%;
+  font-size: 16px;
+  padding: 3px 0 3px 6px;
+  border-radius: 6px;
+  border: 2px solid grey;
+  margin: 6px 0;
+}
+.contact-form > input,
+.contact-form > textarea {
+  width: 100%;
+  font-size: 16px;
+  padding: 3px 0 3px 6px;
+  border-radius: 6px;
+  border: 2px solid grey;
+  margin: 6px 0;
+}
+.contact-form > textarea {
+  height: 6rem;
+}
+.contact-form > button {
+  width: 150px;
+  padding: 2px 10px;
+  background-color: black;
+  color: white;
+  margin-top: 14px;
+  border-radius: 6px;
+}
+.contact-form > button:hover {
+  background-color: rgb(13, 25, 48);
+  transition: .3s ease-in-out;
 }
 /* -- END OF CONTACT -- */
 /* -- START OF FOOTER -- */
 .footer-main-container {
   background-color: black;
+  height: 30vh;
 }
 .footer-container {
   width: 85%;
