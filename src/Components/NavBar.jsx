@@ -1,8 +1,9 @@
 import React from 'react';
 
 const NavBar = () => {
+
   return (
-    <header class='sticky-top bg-black' style={{width: '100%'}}>
+    <header class='sticky-top bg-black' style={{ width: '100%' }}>
       <nav class='navbar navbar-expand-lg navbar-dark' id='header'>
         <div class='container'>
           <a class='navbar-brand' href='' id='logo'>
@@ -19,31 +20,30 @@ const NavBar = () => {
           >
             <span class='navbar-toggler-icon'></span>
           </button>
-
           <div class='collapse navbar-collapse' id='toggleMobileMenu'>
             <ul class='navbar-nav ms-lg-auto'>
               <li class='nav-item'>
-                <a href='#hero' aria-current='page' class='nav-link active'>
+               <a href='#intro' aria-current='page' class='nav-link active'>
                   Home
                 </a>
               </li>
               <li class='nav-item'>
-                <a href='#about' class='nav-link'>
+               <a href='#about' class='nav-link'>
                   About
                 </a>
               </li>
               <li class='nav-item'>
-                <a href='#skills' class='nav-link'>
+               <a href='#skills' class='nav-link'>
                   Skills
                 </a>
               </li>
               <li class='nav-item'>
-                <a href='#projects' class='nav-link'>
+               <a href='#projects' class='nav-link'>
                   Projects
                 </a>
               </li>
               <li class='nav-item'>
-                <a href='#contact' class='nav-link'>
+               <a href='#contact' class='nav-link'>
                   Contact
                 </a>
               </li>
@@ -56,4 +56,3 @@ const NavBar = () => {
 };
 
 export default NavBar;
-  
