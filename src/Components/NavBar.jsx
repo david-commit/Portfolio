@@ -23,7 +23,7 @@ const NavBar = () => {
           <div class='collapse navbar-collapse' id='toggleMobileMenu'>
             <ul class='navbar-nav ms-lg-auto'>
               <li class='nav-item'>
-                <a href='#hero' aria-current='page' class='nav-link active'>
+                <a href='#intro' aria-current='page' class='nav-link active'>
                   Home
                 </a>
               </li>
