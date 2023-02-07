@@ -22,7 +22,9 @@ const Intro = () => {
         <div className='intro-container'>
           <div className='intro-txt'>
             <section>
-              <h5>Welcome to my Portfolio👋</h5>
+              <h5>
+                Welcome to my Portfolio <span style={{fontSize: '36px'}}>👋</span>
+              </h5>
               <h1>Hi, I'm David Ondiege</h1>
               <div className='intro-title'>
                 <hr />
@@ -33,7 +35,7 @@ const Intro = () => {
                 very passionate and dedicated to my work.
               </p>
               <a href='#contact'>
-                <button class='btn btn-dark'>
+                <button id='connect-btn'>
                   Let's Connect <i class='fa-solid fa-circle-arrow-right'></i>
                 </button>
               </a>
