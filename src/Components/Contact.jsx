@@ -3,6 +3,11 @@ import React, { useState } from 'react';
 const Contact = () => {
   const [sendSuccess, setSendSuccess] = useState(false);
   const [sending, setSending] = useState(false);
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [subject, setSubject] = useState('');
+  const [message, setMessage] = useState('');
+  const [errors, setErrors] = useState([]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -50,20 +55,49 @@ const Contact = () => {
         </div>
         {/* == START OF THE SECOND SECTION == */}
         {sendSuccess ? (
-          <div className='success-message'>
-            <p>Thank you. I will reply soon.</p>
-          </div>
+          <div className='success-message'>Thank you. <br />
+          Your message has been received. I will reply soon.</div>
         ) : (
           <form className='contact-form'>
             <div>
-              <input type='text' placeholder='Your Name' />
-              <input type='email' placeholder='Your Email' />
+              <input
+                type='text'
+                placeholder='Your Name'
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+              />
+              <input
+                type='email'
+                placeholder='Your Email'
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
             </div>
-            <input type='text' placeholder='Subject' />
-            <textarea placeholder='Message'></textarea>
+            <input
+              type='text'
+              placeholder='Subject'
+              value={subject}
+              onChange={(e) => setSubject(e.target.value)}
+            />
+            <textarea
+              placeholder='Message'
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+            />
             <button type='submit'>
-              {sending ? 'Sending..' : `Send Message `}
+              {sending ? (
+                'Sending..'
+              ) : (
+                <>
+                  Send Message{' '}
+                  <i
+                    class='fa-solid fa-paper-plane'
+                    style={{ color: 'white', marginLeft: '8px' }}
+                  ></i>
+                </>
+              )}
             </button>
+            {errors && errors?.map((error) => <li>{error}</li>)}
           </form>
         )}
       </div>
