@@ -24,11 +24,11 @@ const skills = [
     image:
       'https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/nodejs.svg',
   },
-  {
-    name: 'Bootstrap CSS',
-    image:
-      'https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg',
-  },
+  // {
+  //   name: 'Bootstrap CSS',
+  //   image:
+  //     'https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg',
+  // },
   {
     name: 'Figma',
     image: 'https://www.vectorlogo.zone/logos/figma/figma-icon.svg',

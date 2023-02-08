@@ -18,10 +18,17 @@ const Contact = () => {
       headers: { 'Content-Type': 'application/json' },
     }).then((res) => {
       if (res.ok) {
-        setSendSuccess(true);
+        res.json(() => {
+          setSendSuccess(true);
+        })
+      } else {
+         res.json((res) => {
+           setErrors(res.errors);
+         });
       }
     });
   };
+
   return (
     <div className='contact-main-container' id='contact'>
       <h1>Contact Me</h1>
@@ -58,7 +65,7 @@ const Contact = () => {
           <div className='success-message'>Thank you. <br />
           Your message has been received. I will reply soon.</div>
         ) : (
-          <form className='contact-form'>
+          <form className='contact-form' onSubmit={handleSubmit}>
             <div>
               <input
                 type='text'
@@ -86,7 +93,9 @@ const Contact = () => {
             />
             <button type='submit'>
               {sending ? (
-                'Sending..'
+                <>
+                Sending.. {' '}  <span class="spinner-border text-light " style={{ width: '20px', height: '20px', marginTop: '1px' }} ></span>
+                </>
               ) : (
                 <>
                   Send Message{' '}
