@@ -14,7 +14,7 @@ function App() {
       data-bs-spy='scroll'
       data-bs-target='#toggleMobileMenu'
       data-bs-offset='0'
-      tabindex='0'
+      tabIndex='0'
     >
       <BrowserRouter>
         <NavBar />

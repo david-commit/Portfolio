@@ -4,7 +4,11 @@ const Footer = () => {
       <div className='footer-container'>
         <section>
           Made with ❤️, By David Ondiege, Open sourced on{' '}
-          <a href='https://github.com/david-commit' target='_blank' style={{marginLeft: '12px'}}>
+          <a
+            href='https://github.com/david-commit/Portfolio'
+            target='_blank'
+            style={{ marginLeft: '12px' }}
+          >
             <i class='fa-brands fa-github'></i>
           </a>
         </section>
