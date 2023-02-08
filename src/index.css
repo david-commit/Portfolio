@@ -215,21 +215,37 @@ header {
 /* -- START OF PROJECTS -- */
 .projects-main-container {
   width: 85%;
-  margin: 100px auto;
-  border: 1px solid red;
+  margin: auto;
+  padding-top: 100px;
 }
 .projects-main-container h1,
 .projects-main-container p {
   text-align: center;
 }
 .projects-container {
-  border: thin red dashed;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.project {
+  width: 25em;
+  margin: 0 1em 2.5em;
+}
+.project img {
+  width: 100%;
+  height: 14em;
+  border: 4px solid white;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px 0px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px 0px inset;
 }
 /* -- END OF PROJECTS -- */
 /* -- START OF CONTACT -- */
 .contact-main-container {
   width: 85%;
   margin: 0 auto 100px;
+  padding-top: 100px;
 }
 .contact-main-container h1 {
   text-align: center;
@@ -312,6 +328,7 @@ header {
   background-color: black;
   height: 15vh;
   display: flex;
+  transform: 0.3s ease-in-out;
 }
 .footer-container {
   width: 85%;

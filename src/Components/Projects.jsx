@@ -14,7 +14,7 @@ const Projects = () => {
             <div className='project' key={p.name}>
               <a href={p.url} target='_blank' rel='noopener noreferrer'>
                 <img src={p.image} alt={p.name} />
-                <h5>{p.name}</h5>
+                {/* <h5>{p.name}</h5> */}
               </a>
             </div>
           );
