@@ -3,7 +3,7 @@ import { projects } from '../data.js';
 import image from '../img/newlife.png';
 
 const Projects = () => {
-  console.log(projects);
+  
   return (
     <div className='projects-main-container' id='projects'>
       <h1>Projects</h1>
