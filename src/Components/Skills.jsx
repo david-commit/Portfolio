@@ -1,12 +1,13 @@
 import React from 'react';
-import data from '../data.json';
+import { skills } from '../data.js';
 
 function Skills() {
+  console.log(skills)
   return (
     <div className='skills-main-container' id='skills'>
       <h1>My Skills</h1>
       <div className='skills-container'>
-        {data?.map((d) => {
+        {skills?.map((d) => {
           return (
             <div className='skill'>
               <img src={d.image} alt='d.name' />
