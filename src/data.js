@@ -60,43 +60,45 @@ const skills = [
 const projects = [
   {
     name: 'Newlife Hospital',
-    image: '',
+    image: './src/img/newlife.png',
     url: 'https://newlife-frontend.vercel.app/',
+    description: '',
   },
   {
     name: 'iCare Caregiving',
     image: '',
     url: 'http://i-care-frontend.vercel.app/',
+    description: '',
   },
   {
     name: 'Fitness Palace',
     image: '',
     url: 'https://fitness-palace-frontend-ten.vercel.app/',
+    description: '',
   },
   {
-    name: '',
+    name: 'GymIT',
     image: '',
-    url: '',
+    url: 'https://gym-it.vercel.app/',
+    description: '',
   },
   {
-    name: '',
+    name: 'PataBoda',
     image: '',
-    url: '',
+    url: 'https://david-commit.github.io/PataBoda/',
+    description: '',
   },
   {
-    name: '',
+    name: 'Hair Saloon',
     image: '',
-    url: '',
+    url: 'http://saloon-sigma.vercel.app/',
+    description: '',
   },
   {
-    name: '',
+    name: 'Microsoft UI Clone',
     image: '',
-    url: '',
-  },
-  {
-    name: '',
-    image: '',
-    url: '',
+    url: 'https://microsoft-ui-clone.pages.dev/',
+    description: '',
   },
 ];
 
