@@ -23,7 +23,7 @@ const Intro = () => {
           <div className='intro-txt'>
             <section>
               <h5>
-                Welcome to my Portfolio <span style={{fontSize: '36px'}}>👋</span>
+                Welcome to my Portfolio <span class='h1'>👋</span>
               </h5>
               <h1>Hi, I'm David Ondiege</h1>
               <div className='intro-title'>
