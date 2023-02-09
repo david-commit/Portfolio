@@ -473,10 +473,8 @@ header {
   .intro-main-container {
     height: unset;
     flex-direction: column-reverse;
-    border: 1px dashed red;
   }
   .intro-socials {
-    /* border: 1px dashed blue; */
     margin-top: -220px;
     margin-left: 8%;
   }
@@ -486,7 +484,6 @@ header {
     margin: 8px 0;
   }
   .intro-container {
-    /* border: 1px dashed purple; */
     flex-direction: column;
   }
   .intro-txt {
@@ -503,15 +500,30 @@ header {
     width: 60%;
     margin-top: 20px;
     margin-left: 30%;
-    /* border: 1px solid red; */
-    display: flex;
-    justify-content: flex-end;
-    align-items: end;
   }
   .intro-img img {
-    /* border: 1px solid red; */
     width: 14em;
   }
-  /* -- END OF HERO -- */
+  /* -- END OF HERO -- */ /* -- START OF ABOUT -- */
+  .about-main-container > p {
+    display: none;
+  }
+  .about-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90vh;
+  }
+  .about-img {
+    width: 100%;
+  }
+  .about-img img {
+    width: 12rem;
+  }
+  .about-txt {
+    width: 100%;
+  }
+  /* -- END OF ABOUT -- */
 }
 /* ======= MEDIA QERIES ========= */
