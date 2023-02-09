@@ -141,6 +141,8 @@ header {
 .intro-img img {
   width: 65%;
   margin: auto;
+  filter: grayscale(1) contrast(1.7);
+  border-radius: 10% 20% 30% 50%;
 }
 /* -- END OF HERO -- */
 /* -- START OF ABOUT -- */
@@ -165,6 +167,8 @@ header {
 .about-img img {
   width: 45%;
   margin: auto;
+  filter: grayscale(1) contrast(1.7);
+  border-radius: 10% 20% 30% 50%;
 }
 .about-txt {
   width: 50%;
@@ -228,26 +232,55 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  border: thin purple dashed;
 }
 /* >>>>> OVERLAY */
 .project {
   padding: 1em 0;
   width: 25em;
-  
 }
-@media screen and (max-width: 640px) {
+/* @media screen and (min-width: 640px) {
   .project {
     display: block;
     width: 100%;
   }
 }
-
-@media screen and (min-width: 900px) {
+@media screen and (max-width: 998px) {
   .project {
     width: 33.33333%;
+    border: red dashed thin;
+  }
+} */
+
+@media screen and (max-width: 1368px) {
+  .project {
+    width: 28em;
   }
 }
-
+@media screen and (max-width: 1065px) {
+  .project {
+    width: 25em !important;
+    border: thin red dashed;
+  }
+}
+@media screen and (max-width: 957px) {
+  .project {
+    width: 48% !important;
+    border: thin dashed black;
+  }
+}
+@media screen and (max-width: 900px) {
+  .project {
+    width: 20em !important;
+    border: thin yellow 1px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .project {
+    width: 100% !important;
+    border: thin yellow 1px;
+  }
+}
 .project-content {
   position: relative;
   width: 90%;
@@ -257,7 +290,6 @@ header {
   border-radius: 10px;
   box-shadow: rgb(44, 62, 80) 0px 0px 15px 0px;
 }
-
 .project-content .project-content-overlay {
   background: rgba(0, 0, 0, 0.7);
   position: absolute;
@@ -273,18 +305,15 @@ header {
   transition: all 0.4s ease-in-out 0s;
   border-radius: 10px;
 }
-
 .project-content:hover .project-content-overlay {
   opacity: 1;
 }
-
 .project-content-image {
   width: 100%;
   height: 14em;
   border: 4px solid white;
   border-radius: 10px;
 }
-
 .project-content-details {
   position: absolute;
   text-align: center;
@@ -432,3 +461,57 @@ header {
   text-decoration: none;
 }
 /* -- END OF FOOTER -- */
+
+/* ======= MEDIA QERIES ========= */
+@media screen and (max-width: 1368px) {
+  .project {
+    width: 28em;
+  }
+}
+@media screen and (max-width: 769px) {
+  /* -- START OF HERO -- */
+  .intro-main-container {
+    height: unset;
+    flex-direction: column-reverse;
+    border: 1px dashed red;
+  }
+  .intro-socials {
+    /* border: 1px dashed blue; */
+    margin-top: -220px;
+    margin-left: 8%;
+  }
+  .intro-socials > a {
+    width: 40px;
+    height: 40px;
+    margin: 8px 0;
+  }
+  .intro-container {
+    /* border: 1px dashed purple; */
+    flex-direction: column;
+  }
+  .intro-txt {
+    width: 100%;
+  }
+  .intro-txt section {
+    margin: auto;
+    width: 85%;
+  }
+  .intro-txt > section > h5 {
+    font-size: 18px;
+  }
+  .intro-img {
+    width: 60%;
+    margin-top: 20px;
+    margin-left: 30%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+  }
+  .intro-img img {
+    /* border: 1px solid red; */
+    width: 14em;
+  }
+  /* -- END OF HERO -- */
+}
+/* ======= MEDIA QERIES ========= */
