@@ -13,7 +13,7 @@ const Contact = () => {
     e.preventDefault();
     setSending(true);
     setSendSuccess(false);
-    fetch(``, {
+    fetch(`/contact`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
     }).then((res) => {

@@ -203,7 +203,7 @@ header {
   justify-content: center;
 }
 .skill {
-  width: 10vh;
+  width: 9vh;
   padding: 4px;
   margin: 12px 8px;
 }
@@ -232,7 +232,6 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  border: thin purple dashed;
 }
 /* >>>>> OVERLAY */
 .project {
@@ -260,25 +259,21 @@ header {
 @media screen and (max-width: 1065px) {
   .project {
     width: 25em !important;
-    border: thin red dashed;
   }
 }
 @media screen and (max-width: 957px) {
   .project {
     width: 48% !important;
-    border: thin dashed black;
   }
 }
 @media screen and (max-width: 900px) {
   .project {
     width: 20em !important;
-    border: thin yellow 1px;
   }
 }
 @media screen and (max-width: 767px) {
   .project {
     width: 100% !important;
-    border: thin yellow 1px;
   }
 }
 .project-content {
@@ -369,6 +364,9 @@ header {
 }
 .contact-text {
   width: 40%;
+}
+.contact-text h3 {
+  font-family: 'Satisfy', sans-serif;
 }
 .contact-text > div > a {
   text-decoration: none;
@@ -473,10 +471,8 @@ header {
   .intro-main-container {
     height: unset;
     flex-direction: column-reverse;
-    border: 1px dashed red;
   }
   .intro-socials {
-    /* border: 1px dashed blue; */
     margin-top: -220px;
     margin-left: 8%;
   }
@@ -486,7 +482,6 @@ header {
     margin: 8px 0;
   }
   .intro-container {
-    /* border: 1px dashed purple; */
     flex-direction: column;
   }
   .intro-txt {
@@ -503,15 +498,75 @@ header {
     width: 60%;
     margin-top: 20px;
     margin-left: 30%;
-    /* border: 1px solid red; */
-    display: flex;
-    justify-content: flex-end;
-    align-items: end;
   }
   .intro-img img {
-    /* border: 1px solid red; */
     width: 14em;
   }
   /* -- END OF HERO -- */
+  /* -- START OF ABOUT -- */
+  .about-main-container > p {
+    display: none;
+  }
+  .about-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90vh;
+  }
+  .about-img {
+    width: 100%;
+  }
+  .about-img img {
+    width: 12rem;
+  }
+  .about-txt {
+    width: 100%;
+  }
+  /* -- END OF ABOUT -- */
+  /* -- START OF SKILLS -- */
+  .skill {
+    width: 8vh;
+  }
+  .skill h6 {
+    font-size: 14px;
+  }
+  /* -- START OF SKILLS -- */
+  .contact-container {
+    flex-direction: column;
+  }
+  .contact-text {
+    width: 100%;
+  }
+  .contact-form {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .success-message {
+    width: 100%;
+    height: 20vh;
+    margin-top: 30px;
+  }
+  /* -- END OF CONTACT -- */
+  /* -- START OF FOOTER -- */
+  .footer-container {
+    width: 100%;
+    flex-direction: column;
+  }
+  .footer-container > section {
+    font-size: 0.8rem;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-container > section > a > i {
+    font-size: 20px;
+    margin: 0 6px;
+  }
+  .footer-container > section > a {
+    font-size: 15px;
+  }
+  /* -- END OF FOOTER -- */
 }
 /* ======= MEDIA QERIES ========= */
