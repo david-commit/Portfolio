@@ -7,20 +7,10 @@ const Projects = () => {
     <div className='projects-main-container' id='projects'>
       <h1>Projects</h1>
       <p>Here are some of the projects i've contributed to:</p>
+      {/* <div className='projects-container'> */}
       <div className='projects-container'>
         {projects?.map((p) => {
           return (
-            // <div className='project' key={p.name}>
-            //   <a
-            //     href={p.url}
-            //     target='_blank'
-            //     rel='noopener noreferrer'
-            //     class='overlay'
-            //   >
-            //     <img src={p.image} alt={p.name} />
-            //     {/* <h5>{p.name}</h5> */}
-            //   </a>
-            // </div>
             <div class='project'>
               <div class='project-content'>
                 <a
