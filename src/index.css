@@ -504,7 +504,8 @@ header {
   .intro-img img {
     width: 14em;
   }
-  /* -- END OF HERO -- */ /* -- START OF ABOUT -- */
+  /* -- END OF HERO -- */
+  /* -- START OF ABOUT -- */
   .about-main-container > p {
     display: none;
   }
@@ -525,5 +526,13 @@ header {
     width: 100%;
   }
   /* -- END OF ABOUT -- */
+  /* -- START OF SKILLS -- */
+  .skill {
+    width: 8vh;
+  }
+  .skill h6 {
+    font-size: 14px;
+  }
+  /* -- START OF SKILLS -- */
 }
 /* ======= MEDIA QERIES ========= */
