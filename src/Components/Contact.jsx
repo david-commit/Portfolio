@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const Contact = () => {
-  const [sendSuccess, setSendSuccess] = useState(true);
+  const [sendSuccess, setSendSuccess] = useState(false);
   const [sending, setSending] = useState(false);
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
