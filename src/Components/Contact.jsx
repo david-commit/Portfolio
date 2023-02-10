@@ -1,32 +1,31 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const [sendSuccess, setSendSuccess] = useState(false);
   const [sending, setSending] = useState(false);
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [subject, setSubject] = useState('');
-  const [message, setMessage] = useState('');
   const [errors, setErrors] = useState([]);
 
-  const handleSubmit = (e) => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
     e.preventDefault();
-    setSending(true);
-    setSendSuccess(false);
-    fetch(`/contact`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-    }).then((res) => {
-      if (res.ok) {
-        res.json(() => {
+    setSending(true)
+    emailjs
+      .sendForm(
+        'service_o07car8',
+        'template_avod1kv',
+        form.current,
+        '5D1KKXQaPNa9YvGj_'
+      )
+      .then(
+        (result) => {
           setSendSuccess(true);
-        })
-      } else {
-         res.json((res) => {
-           setErrors(res.errors);
-         });
-      }
-    });
+        },
+        (error) => {
+          setErrors(true);
+        }
+      );
   };
 
   return (
@@ -62,39 +61,36 @@ const Contact = () => {
         </div>
         {/* == START OF THE SECOND SECTION == */}
         {sendSuccess ? (
-          <div className='success-message'>Thank you. <br />
-          Your message has been received. I will reply soon.</div>
+          <div className='success-message'>
+            Thank you. <br />
+            Your message has been received. I will reply soon.
+          </div>
         ) : (
-          <form className='contact-form' onSubmit={handleSubmit}>
+          <form className='contact-form' ref={form} onSubmit={sendEmail}>
             <div>
               <input
                 type='text'
                 placeholder='Your Name'
-                value={name}
-                onChange={(e) => setName(e.target.value)}
+                name='user_name'
+                required
               />
               <input
                 type='email'
                 placeholder='Your Email'
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                name='user_email'
+                required
               />
             </div>
-            <input
-              type='text'
-              placeholder='Subject'
-              value={subject}
-              onChange={(e) => setSubject(e.target.value)}
-            />
-            <textarea
-              placeholder='Message'
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-            />
+            <input type='text' placeholder='Subject' name='subject' required />
+            <textarea placeholder='Message' name='message' required />
             <button type='submit'>
               {sending ? (
                 <>
-                Sending.. {' '}  <span class="spinner-border text-light " style={{ width: '20px', height: '20px', marginTop: '1px' }} ></span>
+                  Sending..{' '}
+                  <span
+                    class='spinner-border text-light '
+                    style={{ width: '20px', height: '20px', marginTop: '1px' }}
+                  ></span>
                 </>
               ) : (
                 <>
@@ -102,6 +98,7 @@ const Contact = () => {
                   <i
                     class='fa-solid fa-paper-plane'
                     style={{ color: 'white', marginLeft: '8px' }}
+                    value='Send'
                   ></i>
                 </>
               )}
