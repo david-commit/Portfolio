@@ -1,4 +1,4 @@
-# Portfolio
+# David Ondiege's Portfolio
 
 This is a project showcasing my attributes and skills as a fullstack web developer.
 
@@ -8,10 +8,13 @@ This is a project showcasing my attributes and skills as a fullstack web develop
 - Custom CSS & Bootsrap (Styling)
 - Firebase (Data handling - TBI)
 
-### Deployed Work
+## Deployed Work
+
 [David's Portfolio](https://davidondiege.pages.dev/)
 
-### Copyright (c) 2023 David Ondiege
+## License 
+
+Copyright (c) 2023 David Ondiege
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
