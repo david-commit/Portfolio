@@ -20,11 +20,9 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          alert(result.text);
           setSendSuccess(true);
         },
         (error) => {
-          alert(error.text);
           setErrors(true);
         }
       );
