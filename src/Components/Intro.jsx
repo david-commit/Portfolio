@@ -9,13 +9,6 @@ const Intro = () => {
   useEffect(() => {
     const typed = new Typed(el.current, {
       strings: ['Fullstack Web Developer', 'IT Administrator'],
-      // startDelay: 300,
-      // typeSpeed: 100,
-      // backSpeed: 50,
-      // backDelay: 100,
-      // smartBackspace: true,
-      // loop: true,
-      // showCursor: true,
       stringsElement: null,
       // typing speed
       typeSpeed: 30,
@@ -24,13 +17,13 @@ const Intro = () => {
       // backspacing speed
       backSpeed: 20,
       // time before backspacing
-      backDelay: 500,
+      backDelay: 2500,
       // loop
       loop: true,
       // false = infinite
-      loopCount: 5,
+      // loopCount: 5,
       // show cursor
-      showCursor: false,
+      showCursor: true,
       // character for cursor
       cursorChar: '|',
       // attribute to type (null == text)
@@ -71,7 +64,7 @@ const Intro = () => {
               </h5>
               <h1>Hi, I'm David Ondiege</h1>
               <div className='intro-title'>
-                <hr />
+                <hr style={{border: '2px solid rgb(13, 25, 48)'}} />
                 &nbsp; &nbsp;
                 <p ref={el}></p>
               </div>
