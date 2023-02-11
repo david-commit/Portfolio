@@ -6,7 +6,7 @@ This is a project showcasing my attributes and skills as a fullstack web develop
 
 - Vite + React (Frontend)
 - Custom CSS & Bootsrap (Styling)
-- Firebase (Data handling - TBI)
+- EmailJS (Data handling - TBI)
 
 ## Deployed Work
 

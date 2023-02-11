@@ -11,7 +11,7 @@ const Projects = () => {
       <div className='projects-container'>
         {projects?.map((p) => {
           return (
-            <div class='project'>
+            <div class='project' key={p.name}>
               <div class='project-content'>
                 <a
                   href={p.url}
@@ -21,7 +21,7 @@ const Projects = () => {
                   <img
                     class='project-content-image'
                     src={p.image}
-                    alt=''
+                    alt='david ondieges projects'
                   />
                   <div class='project-content-details fadeIn-bottom'>
                     <h3 class='project-content-title'>{p.name}</h3>
@@ -38,12 +38,3 @@ const Projects = () => {
 };
 
 export default Projects;
-
-// LINKS
-// https://newlife-frontend.vercel.app/
-// https://fitness-palace-frontend-ten.vercel.app/
-// http://i-care-frontend.vercel.app/
-// https://gym-it.vercel.app/
-// https://david-commit.github.io/PataBoda/
-// http://saloon-sigma.vercel.app/
-// https://microsoft-ui-clone.pages.dev/

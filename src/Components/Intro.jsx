@@ -1,7 +1,51 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import potrait from '../img/david-ondiege.jpg';
+import Typed from 'typed.js';
 
 const Intro = () => {
+  // Create Ref element.
+  const el = useRef(null);
+
+  useEffect(() => {
+    const typed = new Typed(el.current, {
+      strings: ['Fullstack Web Developer', 'IT Administrator'],
+      // startDelay: 300,
+      // typeSpeed: 100,
+      // backSpeed: 50,
+      // backDelay: 100,
+      // smartBackspace: true,
+      // loop: true,
+      // showCursor: true,
+      stringsElement: null,
+      // typing speed
+      typeSpeed: 30,
+      // time before typing starts
+      startDelay: 1200,
+      // backspacing speed
+      backSpeed: 20,
+      // time before backspacing
+      backDelay: 500,
+      // loop
+      loop: true,
+      // false = infinite
+      loopCount: 5,
+      // show cursor
+      showCursor: false,
+      // character for cursor
+      cursorChar: '|',
+      // attribute to type (null == text)
+      attr: null,
+      // either html or text
+      contentType: 'html',
+      // call when done callback function
+    });
+
+    // Destropying
+    return () => {
+      typed.destroy();
+    };
+  }, []);
+
   return (
     <>
       <div className='intro-main-container' id='intro'>
@@ -28,7 +72,8 @@ const Intro = () => {
               <h1>Hi, I'm David Ondiege</h1>
               <div className='intro-title'>
                 <hr />
-                &nbsp; &nbsp;<p>Full Stack web Developer</p>
+                &nbsp; &nbsp;
+                <p ref={el}></p>
               </div>
               <p>
                 I'm a Fullstack web developer based in Nairobi - Kenya and i'm
