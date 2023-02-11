@@ -6,7 +6,7 @@ const NavBar = () => {
     <header class='sticky-top bg-black' style={{ width: '100%' }}>
       <nav class='navbar navbar-expand-lg navbar-dark' id='header'>
         <div class='container'>
-          <a class='navbar-brand' href='' id='logo'>
+          <a class='navbar-brand' href='#intro' id='logo'>
             {'<DavidOndiege/>'}
           </a>
           <button

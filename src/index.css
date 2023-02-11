@@ -7,6 +7,9 @@
   font-family: 'Open Sans', sans-serif;
   color: black;
 }
+body {
+  overflow-x: hidden;
+}
 /* -- SCROLL BAR -- */
 body::-webkit-scrollbar {
   width: 10px;
@@ -35,7 +38,6 @@ header {
 }
 .nav-link.active {
   color: white;
-  scale: 1.1;
 }
 /* -- END OF NAVBAR -- */
 /* -- START OF HERO -- */
