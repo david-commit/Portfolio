@@ -2,14 +2,14 @@ import potrait from '../img/david-ondiege.jpg';
 
 const About = () => {
   return (
-    <div className='about-main-container' id='about'>
+    <div className='about-main-container' id='about' data-aos='fade-up'>
       <h1>About Me</h1>
       <p>My Introduction</p>
       <div className='about-container'>
-        <div className='about-img'>
+        <div className='about-img' data-aos='fade-left'>
           <img src={potrait} alt='David Ondiege' />
         </div>
-        <div className='about-txt'>
+        <div className='about-txt' data-aos='fade-right'>
           <p>
             I’m a Full-Stack Developer based in Nairobi - Kenya, who likes to
             provide solutions for people's projects and businesses which it is a

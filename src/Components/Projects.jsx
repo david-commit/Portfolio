@@ -11,7 +11,7 @@ const Projects = () => {
       <div className='projects-container'>
         {projects?.map((p) => {
           return (
-            <div class='project' key={p.name}>
+            <div class='project' key={p.name}  data-aos="fade-up">
               <div class='project-content'>
                 <a
                   href={p.url}

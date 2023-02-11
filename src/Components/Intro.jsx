@@ -41,7 +41,7 @@ const Intro = () => {
 
   return (
     <>
-      <div className='intro-main-container' id='intro'>
+      <div className='intro-main-container' id='intro' data-aos='fade-up'>
         <section className='intro-socials'>
           <a href='https://twitter.com/incognito_098' target='_blank'>
             <i class='fa-brands fa-twitter'></i>
@@ -64,7 +64,7 @@ const Intro = () => {
               </h5>
               <h1>Hi, I'm David Ondiege</h1>
               <div className='intro-title'>
-                <hr style={{border: '2px solid rgb(13, 25, 48)'}} />
+                <hr style={{ border: '2px solid rgb(13, 25, 48)' }} />
                 &nbsp; &nbsp;
                 <p ref={el}></p>
               </div>
