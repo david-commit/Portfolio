@@ -1,3 +1,7 @@
+import React, { useEffect } from 'react'
+import { BrowserRouter } from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import NavBar from './NavBar';
 import Intro from './Intro';
 import About from './About';
@@ -5,9 +9,13 @@ import Skills from './Skills';
 import Projects from './Projects';
 import Contact from './Contact';
 import Footer from './Footer';
-import { BrowserRouter } from 'react-router-dom';
 
 function App() {
+
+   useEffect(() => {
+     AOS.init();
+   }, []);
+
   return (
     <main
       className='App'

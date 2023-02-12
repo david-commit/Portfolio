@@ -10,7 +10,7 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    setSending(true)
+    setSending(true);
     emailjs
       .sendForm(
         'service_o07car8',
@@ -32,7 +32,7 @@ const Contact = () => {
     <div className='contact-main-container' id='contact'>
       <h1>Contact Me</h1>
       <div className='contact-container'>
-        <div className='contact-text'>
+        <div className='contact-text' data-aos='fade-right'>
           <h3>Let's Connect</h3>
           <p>
             Have cool idea for new project? Want to build a website or have a
@@ -61,12 +61,17 @@ const Contact = () => {
         </div>
         {/* == START OF THE SECOND SECTION == */}
         {sendSuccess ? (
-          <div className='success-message'>
+          <div className='success-message' data-aos='fade-left'>
             Thank you. <br />
             Your message has been received. I will reply soon.
           </div>
         ) : (
-          <form className='contact-form' ref={form} onSubmit={sendEmail}>
+          <form
+            className='contact-form'
+            ref={form}
+            onSubmit={sendEmail}
+            data-aos='fade-left'
+          >
             <div>
               <input
                 type='text'

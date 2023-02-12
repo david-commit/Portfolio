@@ -7,6 +7,9 @@
   font-family: 'Open Sans', sans-serif;
   color: black;
 }
+body {
+  overflow-x: hidden;
+}
 /* -- SCROLL BAR -- */
 body::-webkit-scrollbar {
   width: 10px;
@@ -35,7 +38,6 @@ header {
 }
 .nav-link.active {
   color: white;
-  scale: 1.1;
 }
 /* -- END OF NAVBAR -- */
 /* -- START OF HERO -- */
@@ -120,10 +122,13 @@ header {
 .intro-title {
   display: flex;
   align-items: center;
-  padding: 4px 0;
+  padding: 4px 0 6px;
 }
 .intro-title p {
   margin: auto 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(13, 25, 48);
 }
 .intro-title hr {
   width: 45px;
@@ -132,7 +137,6 @@ header {
   height: 2px;
   margin: auto 0;
   line-height: 50%;
-  border: 5px blabk solid;
 }
 .intro-img {
   width: 40%;
@@ -142,7 +146,7 @@ header {
   width: 65%;
   margin: auto;
   filter: grayscale(1) contrast(1.7);
-  border-radius: 10% 20% 30% 50%;
+  border-radius: 10% 20% 30% 60%;
 }
 /* -- END OF HERO -- */
 /* -- START OF ABOUT -- */
@@ -157,21 +161,22 @@ header {
 }
 .about-container {
   display: flex;
-  justify-content: space-between;
-  height: 25rem;
+  justify-content: center !important;
 }
 .about-img {
-  width: 45%;
+  width: 35%;
   display: flex;
+  flex-direction: column;
+  align-items: end;
 }
 .about-img img {
   width: 45%;
   margin: auto;
   filter: grayscale(1) contrast(1.7);
-  border-radius: 10% 20% 30% 50%;
+  border-radius: 10% 20% 30% 60%;
 }
 .about-txt {
-  width: 50%;
+  width: 55%;
   margin: auto;
 }
 .about-txt button {
@@ -511,11 +516,11 @@ header {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 90vh;
+    height: 70vh;
   }
   .about-img {
     width: 100%;
+    align-items: start;
   }
   .about-img img {
     width: 12rem;

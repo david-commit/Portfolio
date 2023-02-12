@@ -2,12 +2,12 @@ const skills = [
   {
     name: 'HTML',
     image:
-      'https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg',
+      'https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg',
   },
   {
     name: 'CSS',
     image:
-      'https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg',
+      'https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg',
   },
   {
     name: 'JavaScript',
@@ -17,13 +17,13 @@ const skills = [
   {
     name: 'ReactJS',
     image:
-      'https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg',
+      'https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg',
   },
-  {
-    name: 'NodeJS',
-    image:
-      'https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/nodejs.svg',
-  },
+  // {
+  //   name: 'NodeJS',
+  //   image:
+  //     'https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/nodejs.svg',
+  // },
   // {
   //   name: 'Bootstrap CSS',
   //   image:
@@ -38,6 +38,10 @@ const skills = [
     image: 'https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg',
   },
   {
+    name: 'PostgreSQL',
+    image: 'https://www.vectorlogo.zone/logos/postgresql/postgresql-icon.svg',
+  },
+  {
     name: 'Ruby',
     image:
       'https://raw.githubusercontent.com/devicons/devicon/master/icons/ruby/ruby-original.svg',
@@ -46,10 +50,6 @@ const skills = [
     name: 'Rails',
     image:
       'https://raw.githubusercontent.com/devicons/devicon/master/icons/rails/rails-original-wordmark.svg',
-  },
-  {
-    name: 'PostgreSQL',
-    image: 'https://www.vectorlogo.zone/logos/postgresql/postgresql-icon.svg',
   },
   {
     name: 'WordPress',
