@@ -146,7 +146,7 @@ header {
   width: 65%;
   margin: auto;
   filter: grayscale(1) contrast(1.7);
-  border-radius: 10% 20% 30% 50%;
+  border-radius: 10% 20% 30% 60%;
 }
 /* -- END OF HERO -- */
 /* -- START OF ABOUT -- */
@@ -161,21 +161,22 @@ header {
 }
 .about-container {
   display: flex;
-  justify-content: space-between;
-  height: 25rem;
+  justify-content: center !important;
 }
 .about-img {
-  width: 45%;
+  width: 35%;
   display: flex;
+  flex-direction: column;
+  align-items: end;
 }
 .about-img img {
   width: 45%;
   margin: auto;
   filter: grayscale(1) contrast(1.7);
-  border-radius: 10% 20% 30% 50%;
+  border-radius: 10% 20% 30% 60%;
 }
 .about-txt {
-  width: 50%;
+  width: 55%;
   margin: auto;
 }
 .about-txt button {
@@ -515,11 +516,11 @@ header {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 90vh;
+    height: 70vh;
   }
   .about-img {
     width: 100%;
+    align-items: start;
   }
   .about-img img {
     width: 12rem;

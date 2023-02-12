@@ -19,11 +19,11 @@ const skills = [
     image:
       'https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg',
   },
-  {
-    name: 'NodeJS',
-    image:
-      'https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/nodejs.svg',
-  },
+  // {
+  //   name: 'NodeJS',
+  //   image:
+  //     'https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/nodejs.svg',
+  // },
   // {
   //   name: 'Bootstrap CSS',
   //   image:
