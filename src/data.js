@@ -38,6 +38,10 @@ const skills = [
     image: 'https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg',
   },
   {
+    name: 'GitHub',
+    image: 'https://i.postimg.cc/zBsxtvNt/github-logo.png',
+  },
+  {
     name: 'PostgreSQL',
     image: 'https://www.vectorlogo.zone/logos/postgresql/postgresql-icon.svg',
   },
@@ -50,6 +54,10 @@ const skills = [
     name: 'Rails',
     image:
       'https://raw.githubusercontent.com/devicons/devicon/master/icons/rails/rails-original-wordmark.svg',
+  },
+  {
+    name: 'REST APIs',
+    image: 'https://i.postimg.cc/4xt1mBbM/browser.png',
   },
   {
     name: 'WordPress',
