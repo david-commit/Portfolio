@@ -208,11 +208,12 @@ header {
   justify-content: center;
 }
 .skill {
-  width: 9vh;
+  width: 10vh;
   padding: 4px;
-  margin: 12px 8px;
+  margin: 12px;
 }
 .skill h6 {
+  font-size: 14px;
   display: flex;
   justify-content: center;
 }
