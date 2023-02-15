@@ -22,6 +22,7 @@ const Projects = () => {
                     class='project-content-image'
                     src={p.image}
                     alt='david ondieges projects'
+                    loading='lazy'
                   />
                   <div class='project-content-details fadeIn-bottom'>
                     <h3 class='project-content-title'>{p.name}</h3>
