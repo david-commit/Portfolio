@@ -117,7 +117,7 @@ const projects = [
   },
   {
     name: 'Microsoft UI Clone',
-    image: 'https://i.postimg.cc/fT4Zb4tN/microsoft.png',
+    image: 'https://i.postimg.cc/fT4Zb4tN/microsoft.pngl',
     url: 'https://microsoft-ui-clone.pages.dev/',
     description:
       "Just a tutorial demo clone of Microsoft's website teaching the basics of HTML, CSS and git using Vite + ReactJs. Deployed on CloudFlare pages.",
