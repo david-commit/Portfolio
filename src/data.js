@@ -3,65 +3,84 @@ const skills = [
     name: 'HTML',
     image:
       'https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg',
+    url: 'https://developer.mozilla.org/en-US/docs/Web/HTML',
   },
   {
     name: 'CSS',
     image:
       'https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg',
+    url: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
   },
   {
     name: 'JavaScript',
     image:
       'https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg',
+    url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
   },
   {
     name: 'ReactJS',
     image:
       'https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg',
+    url: 'https://reactjs.org/',
   },
   // {
   //   name: 'NodeJS',
   //   image:
   //     'https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/nodejs.svg',
+  // url: 'https://nodejs.org/en/about/'
   // },
   // {
   //   name: 'Bootstrap CSS',
   //   image:
   //     'https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg',
+  // url: 'https://getbootstrap.com/';
+  // },
+  // {
+  //   name: 'Tailwind CSS',
+  //   image: 'https://svgshare.com/i/qRZ.svg',
+  //   url: 'https://tailwindcss.com/',
   // },
   {
     name: 'Figma',
     image: 'https://www.vectorlogo.zone/logos/figma/figma-icon.svg',
+    url: 'https://www.figma.com/',
   },
   {
     name: 'Git',
     image: 'https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg',
+    url: 'https://git-scm.com/',
   },
   {
     name: 'GitHub',
     image: 'https://i.postimg.cc/zBsxtvNt/github-logo.png',
+    url: 'https://github.com/',
   },
   {
     name: 'PostgreSQL',
     image: 'https://www.vectorlogo.zone/logos/postgresql/postgresql-icon.svg',
+    url: 'https://www.postgresql.org/',
   },
   {
     name: 'Ruby',
     image:
       'https://raw.githubusercontent.com/devicons/devicon/master/icons/ruby/ruby-original.svg',
+    url: 'https://www.ruby-lang.org/en/',
   },
   {
     name: 'Rails',
     image:
       'https://raw.githubusercontent.com/devicons/devicon/master/icons/rails/rails-original-wordmark.svg',
+    url: 'https://rubyonrails.org/',
   },
   {
     name: 'REST APIs',
     image: 'https://i.postimg.cc/4xt1mBbM/browser.png',
+    url: 'https://restfulapi.net/',
   },
   {
     name: 'WordPress',
     image: 'https://www.vectorlogo.zone/logos/wordpress/wordpress-icon.svg',
+    url: 'https://wordpress.org/',
   },
 ];
 
