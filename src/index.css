@@ -148,10 +148,8 @@ header {
 .intro-img img {
   width: 65%;
   margin: auto;
-  filter: grayscale(1.5) contrast(1.7);
+  filter: grayscale(1) contrast(1.7);
   border-radius: 70% 50% 40% 70%;
-  border: 4px double black;
-  background-color: darkgray;
 }
 /* -- END OF HERO -- */
 /* -- START OF ABOUT -- */
