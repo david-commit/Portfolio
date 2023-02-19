@@ -7,6 +7,9 @@
   font-family: 'Open Sans', sans-serif;
   color: black;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   overflow-x: hidden;
 }
@@ -36,7 +39,7 @@ header {
 .nav-link {
   transition: 0.15s ease-in-out;
 }
-.nav-link.active {
+.nav-link:active {
   color: white;
 }
 /* -- END OF NAVBAR -- */
@@ -146,7 +149,7 @@ header {
   width: 65%;
   margin: auto;
   filter: grayscale(1) contrast(1.7);
-  border-radius: 10% 20% 30% 60%;
+  border-radius: 70% 50% 40% 70%;
 }
 /* -- END OF HERO -- */
 /* -- START OF ABOUT -- */
@@ -279,13 +282,13 @@ header {
   }
 }
 @media screen and (max-width: 767px) {
-  /* .project {
+  .project {
     width: 110% !important;
-  } */
+  }
 }
 .project-content {
   position: relative;
-  width: 90%;
+  width: 95%;
   max-width: 400px;
   margin: auto;
   overflow: hidden;

@@ -23,6 +23,8 @@ const Projects = () => {
                     src={p.image}
                     alt='david ondieges projects'
                     loading='lazy'
+                    width='1600'
+                    height='900'
                   />
                   <div class='project-content-details fadeIn-bottom'>
                     <h3 class='project-content-title'>{p.name}</h3>
