@@ -23,12 +23,17 @@ const skills = [
       'https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg',
     url: 'https://reactjs.org/',
   },
-  // {
-  //   name: 'NodeJS',
-  //   image:
-  //     'https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/nodejs.svg',
-  // url: 'https://nodejs.org/en/about/'
-  // },
+  {
+    name: 'NodeJS',
+    image:
+      'https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/nodejs.svg',
+    url: 'https://nodejs.org/en/about/',
+  },
+  {
+    name: 'ExpressJS',
+    image: 'https://www.vectorlogo.zone/logos/expressjs/expressjs-icon.svg',
+    url: 'https://expressjs.com/',
+  },
   // {
   //   name: 'Bootstrap CSS',
   //   image:
@@ -40,6 +45,29 @@ const skills = [
   //   image: 'https://svgshare.com/i/qRZ.svg',
   //   url: 'https://tailwindcss.com/',
   // },
+  {
+    name: 'Ruby',
+    image:
+      'https://raw.githubusercontent.com/devicons/devicon/master/icons/ruby/ruby-original.svg',
+    url: 'https://www.ruby-lang.org/en/',
+  },
+  {
+    name: 'Rails',
+    image:
+      'https://raw.githubusercontent.com/devicons/devicon/master/icons/rails/rails-original-wordmark.svg',
+    url: 'https://rubyonrails.org/',
+  },
+  {
+    name: 'PostgreSQL',
+    image: 'https://www.vectorlogo.zone/logos/postgresql/postgresql-icon.svg',
+    url: 'https://www.postgresql.org/',
+  },
+  {
+    name: 'MongoDB',
+    image:
+      'https://raw.githubusercontent.com/vscode-icons/vscode-icons/23484f41d6852846e74f65320691203644291341/icons/file_type_mongo.svg',
+    url: 'https://www.mongodb.com/',
+  },
   {
     name: 'Figma',
     image: 'https://www.vectorlogo.zone/logos/figma/figma-icon.svg',
@@ -56,26 +84,15 @@ const skills = [
     url: 'https://github.com/',
   },
   {
-    name: 'PostgreSQL',
-    image: 'https://www.vectorlogo.zone/logos/postgresql/postgresql-icon.svg',
-    url: 'https://www.postgresql.org/',
-  },
-  {
-    name: 'Ruby',
-    image:
-      'https://raw.githubusercontent.com/devicons/devicon/master/icons/ruby/ruby-original.svg',
-    url: 'https://www.ruby-lang.org/en/',
-  },
-  {
-    name: 'Rails',
-    image:
-      'https://raw.githubusercontent.com/devicons/devicon/master/icons/rails/rails-original-wordmark.svg',
-    url: 'https://rubyonrails.org/',
-  },
-  {
     name: 'REST APIs',
     image: 'https://i.postimg.cc/4xt1mBbM/browser.png',
     url: 'https://restfulapi.net/',
+  },
+  {
+    name: 'Prisma ORM',
+    image:
+      'https://raw.githubusercontent.com/vscode-icons/vscode-icons/23484f41d6852846e74f65320691203644291341/icons/file_type_light_prisma.svg',
+    url: 'https://www.prisma.io/',
   },
   {
     name: 'WordPress',
@@ -85,6 +102,13 @@ const skills = [
 ];
 
 const projects = [
+  {
+    name: 'QandA-node-API',
+    image: 'https://i.postimg.cc/MpWL6b6d/capa-node-express-rest.png',
+    url: 'https://github.com/david-commit/QandA-node-API',
+    description:
+      'A Question and Answer protected API that enables community members to register, login, ask questions and answer existing questions.',
+  },
   {
     name: 'Newlife Hospital',
     image: 'https://i.postimg.cc/Vkg8PNyD/newlife.png',
