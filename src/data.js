@@ -104,7 +104,7 @@ const skills = [
 const projects = [
   {
     name: 'QandA-node-API',
-    image: 'https://i.postimg.cc/MpWL6b6d/capa-node-express-rest.png',
+    image: 'https://i.postimg.cc/HWygNgkH/node-express-project.jpg',
     url: 'https://github.com/david-commit/QandA-node-API',
     description:
       'A Question and Answer protected API that enables community members to register, login, ask questions and answer existing questions.',
